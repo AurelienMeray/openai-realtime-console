@@ -1,0 +1,164 @@
+.document-uploader {
+  padding: 16px;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #e7e7e7;
+  margin-bottom: 16px;
+
+  .upload-section {
+    margin-bottom: 16px;
+  }
+
+  .upload-area {
+    border: 2px dashed #ddd;
+    border-radius: 8px;
+    padding: 32px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: #fafafa;
+
+    &:hover {
+      border-color: #0099ff;
+      background: #f0f8ff;
+    }
+
+    &.drag-active {
+      border-color: #0099ff;
+      background: #e6f3ff;
+    }
+
+    svg {
+      color: #666;
+      margin-bottom: 8px;
+    }
+
+    .upload-text {
+      font-size: 14px;
+      color: #333;
+      margin-bottom: 4px;
+
+      strong {
+        color: #0099ff;
+      }
+    }
+
+    .upload-hint {
+      font-size: 12px;
+      color: #666;
+    }
+  }
+
+  .files-section {
+    border-top: 1px solid #e7e7e7;
+    padding-top: 16px;
+  }
+
+  .files-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+
+    h4 {
+      margin: 0;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .process-button {
+      background: #0099ff;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      font-size: 12px;
+      cursor: pointer;
+      transition: background 0.2s ease;
+
+      &:hover:not(:disabled) {
+        background: #007acc;
+      }
+
+      &:disabled {
+        background: #ccc;
+        cursor: not-allowed;
+      }
+    }
+  }
+
+  .files-list {
+    max-height: 200px;
+    overflow-y: auto;
+  }
+
+  .file-item {
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    background: #f5f5f5;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    font-size: 12px;
+
+    .file-icon {
+      margin-right: 8px;
+      font-size: 16px;
+    }
+
+    .file-name {
+      flex: 1;
+      color: #333;
+      font-weight: 500;
+    }
+
+    .file-size {
+      color: #666;
+      margin-right: 8px;
+    }
+
+    .remove-file {
+      background: none;
+      border: none;
+      color: #999;
+      cursor: pointer;
+      padding: 2px;
+      border-radius: 2px;
+      transition: all 0.2s ease;
+
+      &:hover:not(:disabled) {
+        color: #ff4444;
+        background: #ffe6e6;
+      }
+
+      &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+    }
+  }
+
+  .instructions {
+    border-top: 1px solid #e7e7e7;
+    padding-top: 16px;
+    margin-top: 16px;
+
+    h4 {
+      margin: 0 0 8px 0;
+      font-size: 14px;
+      color: #333;
+    }
+
+    ol {
+      margin: 0;
+      padding-left: 20px;
+      font-size: 12px;
+      color: #666;
+      line-height: 1.4;
+
+      li {
+        margin-bottom: 4px;
+      }
+    }
+  }
+} 
