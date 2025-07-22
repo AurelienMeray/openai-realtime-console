@@ -6,9 +6,6 @@ A web-based console for interacting with the OpenAI Realtime API. This app allow
 - Inspect and debug API interactions
 - Use advanced audio tools for recording and playback
 - Ask questions and get answers sourced from your own documents using Retrieval-Augmented Generation (RAG)
-
-<img src="/readme/realtime-console-demo.png" width="800" />
-
 ---
 
 ## Features
